@@ -575,8 +575,8 @@ jobs:
           git checkout main 2>/dev/null || git checkout -b main origin/main
         fi
 
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git config user.name "github-actions[bot]"
+        git config user.email "action@github.com"
+        git config user.name "GitHub Action"
 
         # 使用 autostash 自动 stash 未暂存更改，rebase 完成后会自动 pop
         if git pull --rebase --autostash origin main; then
